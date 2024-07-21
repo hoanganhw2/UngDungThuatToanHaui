@@ -1,3 +1,14 @@
+/*
+Bài tập 4: Cho danh b chứa thông tin về n chuyến bay của 1 hãng hàng không, thông 
+tin về mỗi chuyến bay gồm số hiệu chuyến bay (ví dụ: VN005), giá vé, số ghế ngồi.
+- Thiết kế thuật toán A1 để hiển thị ra màn hình tất cả các chuyến bay có giá vé 
+trên 700000 bằng phương pháp đệ quy.
+- Thiết kế thuật toán A2 để tìm và trả về chuyến bay có giá vé thấp nhất trong danh 
+sách b bằng chiến lược chia để trị.
+- Thiết kế thuật toán A3 để liệt kê tất cả các phương án khác nhau để chọn ra 4 
+chuyến bay từ danh sách b bằng phương pháp quay lui.
+- Viết chương trình thực hiện
+*/
 #include<bits/stdc++.h>
 using namespace std ;
 int n =6,k=4 ;
