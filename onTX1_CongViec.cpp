@@ -22,11 +22,6 @@ d) Áp dụng thuật toán A3 để hiển thị tất cả các phương án k
 n công việc trong danh sách b cho n nhân viên trong danh sách L, mỗi 
 phương án hiển thị danh sách gồm tên công việc – tên nhân viên tương 
 ứng
-
-
-
-
-
 */
 
 #include<bits/stdc++.h>
@@ -71,6 +66,15 @@ void showList()
 		showDaTa(cv);
 	}
 }
+void showkq()
+{
+	for(int i=1;i<=n;i++)
+	{
+		cout<<setw(10)<<c[a[i]-1].maCV<<" - "<<L[i-1]<<"|";
+//		cout<<a[i];
+	}
+	cout<<endl;
+}
 void A1(int n)
 {
 	if(n<0)
@@ -99,15 +103,7 @@ int A2(vector<CongViec> v ,int l, int r)
 		A2(v,m+1,r);
 	}
 }
-void showkq()
-{
-	for(int i=1;i<=n;i++)
-	{
-		cout<<setw(10)<<c[a[i]-1].maCV<<" - "<<L[i-1]<<"|";
-//		cout<<a[i];
-	}
-	cout<<endl;
-}
+
 void A3(int i)
 {
 	for(int j=1;j<=n;j++)
