@@ -47,11 +47,11 @@ int Q1(vector<phone> p, int k, vector<vector<int>>& dp) {
     for (int i = 0; i <= k; i++) dp[0][i] = 0;
     for (int i = 1; i <= n; i++) {
         for (int j = 0; j <= k; j++) {
-            dp[i][j] = dp[i - 1][j]; // Assume not taking item i-1
+            dp[i][j] = dp[i - 1][j]; 
             if (j >= p[i-1].size) {
                 int tam = p[i-1].price + dp[i - 1][j - p[i-1].size];
                 if (tam > dp[i][j]) {
-                    dp[i][j] = tam; // Take item i-1
+                    dp[i][j] = tam; 
                 }
             }
         }
@@ -79,9 +79,9 @@ int main() {
     cout << "nhap kich thuoc cua cai tui: ";
     cin >> k;
     vector<vector<int>> dp(n + 1, vector<int>(k + 1));
-    cout << "Maximum price: " << Q1(p, k, dp) << endl;
+    cout  << Q1(p, k, dp) << endl;
     result1(p, result, dp, k);
-    cout << "Selected phones:" << endl;
+    cout << "|-------------------------------|" << endl;
     showDs(result);
     return 0;
 }
