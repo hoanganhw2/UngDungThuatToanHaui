@@ -1,5 +1,18 @@
 #include<bits/stdc++.h>
 using namespace std ;
+/*
+Bài tập 5: Xử lý xâu ký tự
+Input:
+- Cho danh sách d gồm n chiếc laptop thuộc các hãng sản xuất khác nhau, thông tin về
+mỗi chiếc laptop gồm tên hãng sản xuất, cấu hình, giá bán (ví dụ: HP, CPU 2.5GHz 
+upto 3.5GHz-RAM 16GB-SSD 512GB, 15000000; ACER, CPU 2.5GHz upto 
+3.5GHz-RAM 8GB-HDD 2TB, 12000000).
+Output:
+- Tính r là lượng số máy tính trong danh sách d có thông tin bộ nhớ trong là “RAM 
+16GB”.
+- Tính s và t lần lượt là số lượng và danh sách các máy tính trong danh sách d sử dụng 
+ổ cứng loại “SSD”.
+*/
 struct laptop {
 	string tenHang ;
 	string cauHinh;
